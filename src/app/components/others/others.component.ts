@@ -5,6 +5,7 @@ import { Component, OnInit, OnChanges, AfterContentInit, AfterContentChecked, Af
   templateUrl: './others.component.html',
   styleUrls: ['./others.component.scss']
 })
+// tslint:disable-next-line: max-line-length
 export class OthersComponent implements OnInit, OnChanges, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
 
   currency = 10000000;

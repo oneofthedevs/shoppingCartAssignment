@@ -1,15 +1,16 @@
 <section>
     <div class="container">
-        <div class="row">
+        <div class="row flex-wrap mb-5">
             <div class="col-md-4" *ngFor="let item of productList">
-                <div class="card" style="width: 18rem;">
-                    <!-- (click)="editItem(item)" -->
+                <div class="card" style="width: 18rem;" (click)="getDetails(item.id)">
+                    <img [src]="item.image" class="card-img-top" alt="No image Found">
                     <div class="card-body">
                         <h5 class="card-title">{{ item.name | titlecase }}</h5>
                         <h6 class="card-subtitle mb-2 text-muted">{{ item.price | currency:'INR' }}</h6>
                         <p class="card-text" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
                             {{ item.description}}</p>
-                        <button class="btn btn-primary btn-block" (click)="addToCart(item)">Add to Cart</button>
+                        <button class="btn btn-warning btn-block" (click)="addToCart(item)">Add to
+                            Cart</button>
                         <!-- <div class="d-flex justify-content-around mt-3">
                             <button class="btn btn-danger" (click)="deleteItem(item.id)"><i
                                     class="fa fa-trash"></i></button>

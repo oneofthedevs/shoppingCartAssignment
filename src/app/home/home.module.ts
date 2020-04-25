@@ -6,14 +6,14 @@ import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { CreateComponent } from './create/create.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CartComponent } from './dashboard/cart/cart.component';
 import { ListComponent } from './dashboard/list/list.component';
+import { DetailsComponent } from './dashboard/details/details.component';
 
 
 @NgModule({
-  declarations: [DashboardComponent, CreateComponent, NavbarComponent, CartComponent, ListComponent],
+  declarations: [DashboardComponent, NavbarComponent, CartComponent, ListComponent, DetailsComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,

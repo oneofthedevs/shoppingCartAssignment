@@ -19,11 +19,10 @@
                     </td>
                 </tr>
             </tbody>
-            <div *ngIf="list.length == 0">
-                No Items present inside the cart
-            </div>
         </table>
-
+        <div *ngIf="list.length == 0">
+            <h6 class="text-center mt-5" style="font-size: 1.3rem;">No Items found in the cart 🥺</h6>
+        </div>
 
     </div>
 </section>

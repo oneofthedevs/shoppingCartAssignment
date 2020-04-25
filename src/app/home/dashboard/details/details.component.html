@@ -1,0 +1,15 @@
+<section>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-md-6 justify-content-center d-flex">
+                <img [src]="productdata.image" alt="No Image Found">
+            </div>
+            <div class="col-md-6">
+                <h2>{{ productdata.name }}</h2>
+                <h5>{{ productdata.price | currency: 'INR' }}</h5>
+                <p class="text-justify">{{ productdata.description  }}</p>
+                <button class="btn btn-warning" (click)="addToCart(productdata)">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</section>
