@@ -12,7 +12,9 @@
                 <label for="password">Password</label>
                 <input class="form-control" type="password" name="password" id="password"
                     autocomplete="current-password" required #password>
-                <button class="btn btn-primary" (click)="check(email.value, password.value)">Log In</button>
+                <button class="btn btn-primary btn-block" (click)="check(email.value, password.value)">Log In</button>
+                <button class="btn btn-success btn-block" routerLink="/others">Click Here to See Other
+                    Implementations</button>
             </div>
         </div>
     </div>
