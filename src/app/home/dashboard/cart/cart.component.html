@@ -1,0 +1,29 @@
+<section>
+    <div class="container mt-3">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Price</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody *ngIf="list.length > 0">
+                <tr *ngFor="let item of list">
+                    <td>{{ item.name }}</td>
+                    <td>{{item.description}}</td>
+                    <td>{{ item.price | currency:'INR' }}</td>
+                    <td class="text-center"><button class="btn btn-danger btn-sm" (click)="deleteItem(item.id)"><i
+                                class="fa fa-trash"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+            <div *ngIf="list.length == 0">
+                No Items present inside the cart
+            </div>
+        </table>
+
+
+    </div>
+</section>

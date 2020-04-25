@@ -1,0 +1,69 @@
+<section class="pb-5">
+    <div class="container align-items-center">
+        <h2 class="text-warning display-4 text-center pt-4">Open The Console to see implementation of Hooks</h2>
+        <button class="btn btn-primary goBackbtn" routerLink="">Go back To Login</button>
+        <h6 class="display-3">Pipes</h6>
+        <div class="cardbody">
+            <h4>In Built Pipes</h4>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Currency</h5>
+                    <ol>
+                        <li>INR: {{currency | currency:'INR'}}</li>
+                        <li>USD: {{currency | currency:'USD'}}</li>
+                    </ol>
+                </div>
+                <div class="col-md-6">
+                    <h5>Date</h5>
+                    <ol>
+                        <li>Value:- {{ date }}</li>
+                        <li>Standard:- {{date | date }}</li>
+                        <li>Medium<:- {{date | date:'medium'}}</li>
+                        <li>Short Time:- {{ date | date:'shortTime' }}</li>
+                        <li>hh:mm:ss:- {{ date | date:'hh:mm:ss' }}</li>
+                        <li>Week of the Year:- {{ date | date: 'w'}}</li>
+                        <li>TimeZone:- {{ date | date:'z' }}</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Text</h5>
+                    <ol>
+                        <li>Value: {{text}}</li>
+                        <li>Uppercase: {{text | uppercase}}</li>
+                        <li>Lowercase: {{text | lowercase}}</li>
+                        <li>Titlecase: {{text | titlecase}}</li>
+                        <li>Slice[4,10]: {{ text | slice:4:20 }}</li>
+                    </ol>
+                </div>
+                <div class="col-md-6">
+                    <h5>Decimal</h5>
+                    <ol>
+                        <li>Value: {{decimal}}</li>
+                        <li>Number: {{decimal | number}}</li>
+                        <li>Number [3.1-1]: {{decimal | number: '3.1-1'}}</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Custom Pipe</h5>
+                    <ol>
+                        <li>Add Emojie: {{ text | reverseStr:true }}</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <h6 class="display-3">Directives</h6>
+        <div class="cardbody">
+            <p>Without Custom Direvtive</p>
+            <p appBackcolor>With Custom Directive: Hover Over Me🥺</p>
+        </div>
+        <h6 class="display-3">Two Way Data Binding</h6>
+        <div class="cardbody">
+            <input type="text" class="form-control" [(ngModel)]="inputText" placeholder="Enter Anything">
+            <p>{{inputText}}</p>
+        </div>
+    </div>
+</section>

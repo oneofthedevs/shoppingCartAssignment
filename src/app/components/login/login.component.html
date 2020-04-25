@@ -1,0 +1,19 @@
+<section>
+    <div class="container d-flex justify-content-center align-items-center cardback">
+        <div class="cardbody">
+            <div class="cardtitle d-flex justify-content-center align-items-center flex-column">
+                <h4>Login to your account</h4>
+                <a routerLink="register">Don't have an account? Sign Up Now</a>
+            </div>
+            <div class="cardinput d-flex justify-content-center flex-column">
+                <label for="email">Email</label>
+                <input class="form-control" type="email" name="email" autocomplete="username" required #email>
+                <br>
+                <label for="password">Password</label>
+                <input class="form-control" type="password" name="password" id="password"
+                    autocomplete="current-password" required #password>
+                <button class="btn btn-primary" (click)="check(email.value, password.value)">Log In</button>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,26 @@
+{
+  "Products": [
+    {
+      "id": 1,
+      "name": "Dr. Not Nice",
+      "description": "Some Description",
+      "price": 10000,
+      "image": ""
+    },
+    {
+      "id": 2,
+      "name": "Dr. Nice",
+      "description": "Some Description",
+      "price": 100,
+      "image": ""
+    }
+  ],
+  "Users": [
+    {
+      "id": 1,
+      "email": "dev@gmail.com",
+      "password": "12345"
+    }
+  ],
+  "cart": []
+}
