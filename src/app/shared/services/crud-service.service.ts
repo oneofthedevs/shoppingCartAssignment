@@ -27,6 +27,7 @@ export class CrudServiceService {
       'Content-type': 'application/json'
     })
   };
+  // Made By Dev Chhaniyara
   // baseURL will be used to perform ops on Product DB which contains all the products
   baseURL = 'http://localhost:3000/Products';
   // cartURL will be used to perform ops in items added to card
@@ -53,7 +54,7 @@ export class CrudServiceService {
       catchError(this.handleError)
     );
   }
-
+  // Made By Dev Chhaniyara
   // // Post
   // addProduct(data: product): Observable<product> {
   //   return this._http.post<product>(this.baseURL, data, this.headerOption);
