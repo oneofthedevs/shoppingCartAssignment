@@ -8,13 +8,14 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
+  // tslint:disable-next-line: variable-name
   constructor(private _router: Router) { }
 
   ngOnInit(): void {
     this.checkLogin();
   }
   check(n: string, p: string) {
-    if (n == 'dev@gmail.com' && p == '12345') {
+    if (n === 'dev@gmail.com' && p === '12345') {
       localStorage.setItem('username', n);
       this._router.navigate(['home'])
       return true;

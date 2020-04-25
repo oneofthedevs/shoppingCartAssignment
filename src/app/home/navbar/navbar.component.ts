@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  // tslint:disable-next-line: variable-name
   constructor(private _router: Router) { }
 
   logOut() {
