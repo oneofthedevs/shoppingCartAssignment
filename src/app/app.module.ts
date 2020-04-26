@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { OthersComponent } from './components/others/others.component';
 import { ReverseStrPipe } from './shared/pipes/reverse-str.pipe';
 import { BackcolorDirective } from './shared/directives/backcolor.directive';
+import { AdminLoginComponent } from './components/admin-login/admin-login.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BackcolorDirective } from './shared/directives/backcolor.directive';
     LoginComponent,
     OthersComponent,
     ReverseStrPipe,
-    BackcolorDirective
+    BackcolorDirective,
+    AdminLoginComponent
   ],
   imports: [
     BrowserModule,

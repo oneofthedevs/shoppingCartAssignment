@@ -1,0 +1,60 @@
+{
+  "Products": [
+    {
+      "id": 1,
+      "name": "Dr. Not Nice",
+      "description": "Some Description",
+      "price": 10000,
+      "category": "Anything",
+      "image": "./../../../../assets/m30s.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Dr. Nice",
+      "description": "Some Description",
+      "price": 100,
+      "category": "",
+      "image": "./../../../../assets/m30s.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Dr. Nice",
+      "description": "Some Description",
+      "price": 100,
+      "category": "Anything",
+      "image": "./../../../../assets/m30s.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "Dr. Nice",
+      "description": "Some Description",
+      "price": 100,
+      "category": "Anything",
+      "image": "./../../../../assets/m30s.jpeg"
+    },
+    {
+      "id": 854161,
+      "name": "Test ",
+      "description": "Just a test run for product entryyy",
+      "price": 1000000,
+      "category": "",
+      "image": ""
+    },
+    {
+      "id": 932017,
+      "name": "Test_2",
+      "description": "Test Run #2 changes to #3",
+      "price": 5,
+      "category": "Food",
+      "image": ""
+    }
+  ],
+  "Users": [
+    {
+      "id": 1,
+      "email": "dev@gmail.com",
+      "password": "12345"
+    }
+  ],
+  "cart": []
+}

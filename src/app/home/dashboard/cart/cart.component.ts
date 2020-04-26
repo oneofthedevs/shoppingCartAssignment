@@ -27,8 +27,8 @@ export class CartComponent implements OnInit {
   deleteItem(id: number) {
     this._service.deleteCartItem(id).subscribe(data => {
       console.log(data);
+      this.getItems();
     });
-    this.getItems();
   }
 
 }

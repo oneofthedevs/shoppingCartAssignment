@@ -1,0 +1,87 @@
+<app-navbar></app-navbar>
+<section>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-5">
+                <div class="row mt-1">
+                    <div class="col-md-6 form-group">
+                        <input type="text" class="form-control" placeholder="Product Name"
+                            [(ngModel)]="_service.currentProduct.name" required>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <input type="number" class="form-control" placeholder="Price"
+                            [(ngModel)]="_service.currentProduct.price" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 form-group">
+                        <textarea class="form-control" name="description" id="" cols="30" rows="10"
+                            placeholder="Description" [(ngModel)]="_service.currentProduct.description"
+                            required></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-12">
+                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect"
+                            [(ngModel)]="_service.currentProduct.category" required>
+                            <option selected disabled>Select a Category</option>
+                            <option class="options" value="Mobile">Mobile</option>
+                            <option class="options" value="Laptop">Laptop</option>
+                            <option class="options" value="Food">Food</option>
+                            <option class="options" value="Accessories">Accessories</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- <div class="row">
+                    <div class="form-group col-12">
+                        <input type="file" name="image" id="image" class="form-control"
+                            [(ngModel)]="_service.currentProduct.image">
+                    </div>
+                </div> -->
+                <!-- <div class="row d-flex justify-content-center">
+                    <div class="col-11 d-flex justify-content-center"
+                        style="height: 200px; width: 90%; border: 1px dashed #3e3e3e;">
+                        <img [src]="_service.currentProduct.image" alt="No Image Added"
+                            style="height: 100%; width: auto !important; clear: both; object-fit: contain;">
+                    </div>
+                </div> -->
+                <div class="row mt-3">
+                    <div class="form-group col-8">
+                        <button class="btn btn-success btn-block" (click)="addOrEdit(_service.currentProduct)">Save <i
+                                class="fa fa-save"></i></button>
+                    </div>
+                    <div class="form-group col-4">
+                        <button class="btn btn-warning btn-block" (click)="reset()">Reset <i
+                                class="fa fa-retweet"></i></button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-7">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">id</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Category</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of allProducts">
+                            <td>{{ item.id }}</td>
+                            <td>{{ item.name }}</td>
+                            <td>{{ item.price }}</td>
+                            <td>{{ item.category }}</td>
+                            <td class="text-center"><button class="btn btn-danger btn-sm"
+                                    (click)="deleteProduct(item.id)"><i class="fa fa-trash"></i></button><button
+                                    class="btn btn-warning btn-sm ml-3" (click)="editProduct(item)"><i
+                                        class="fa fa-pencil"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

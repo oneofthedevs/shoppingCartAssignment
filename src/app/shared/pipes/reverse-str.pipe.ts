@@ -8,14 +8,20 @@ export class ReverseStrPipe implements PipeTransform {
 
   transform(value: any, ...args): any {
     let newString = value;
+
+    newString += '🍪';
+
+    if (args[0] === 'wolf') {
+      newString = newString + '🐺';
+    }
+    else if (args[0] === 'pizza') {
+      newString = newString + '🍕';
+    }
+    else if (args[0] === 'burrito') {
+      newString = newString + '🌯';
+    }
     if (args[0]) {
-      newString += '🐺';
-    }
-    if (args[1] === 'singleQuote') {
-      newString = args[1] + newString;
-    }
-    else if (args[1] === 'doubleQuotes') {
-      newString = '"' + newString;
+      newString = newString + '👻';
     }
     return newString;
   }

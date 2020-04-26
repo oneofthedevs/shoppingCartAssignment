@@ -1,3 +1,5 @@
+import { AdminLoginComponent } from './components/admin-login/admin-login.component';
+import { AdminAuthGuard } from './shared/authGuard/admin-auth.guard';
 import { OthersComponent } from './components/others/others.component';
 import { AuthGuard } from './shared/authGuard/auth.guard';
 import { LoginComponent } from './components/login/login.component';
@@ -11,10 +13,20 @@ const routes: Routes = [
     component: LoginComponent
   },
   {
+    path: 'adminLogin',
+    component: AdminLoginComponent
+  },
+  {
     path: 'home',
     loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
     canActivateChild: [AuthGuard]
   },
+  {
+    path: 'admin',
+    loadChildren: () => import('./admin/admin.module').then(a => a.AdminModule),
+    canActivateChild: [AdminAuthGuard]
+  }
+  ,
   {
     path: 'others',
     component: OthersComponent
