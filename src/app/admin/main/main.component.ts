@@ -48,11 +48,13 @@ export class MainComponent implements OnInit {
   createProduct(item: product) {
     this._service.createProduct(item).subscribe(data => {
       this.getProducts();
+      this.reset();
     });
   }
   updateProduct(item: product) {
     this._service.updateProduct(item).subscribe(data => {
       this.getProducts();
+      this.reset();
     });
   }
 
