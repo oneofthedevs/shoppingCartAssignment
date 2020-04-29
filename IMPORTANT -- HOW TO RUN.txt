@@ -16,3 +16,5 @@ Password: 12345
 Admin Login Credentials 
 Email: admin@admin.com
 Password: admin
+
+Link To GitHub Repo: https://github.com/oneofthedevs/shoppingCartAssignment
