@@ -1,0 +1,18 @@
+1. Open Command Prompt, Powershell or Terminal Window in the current directory
+
+2. First Install json-server npm package using "npm install -g json-server"
+
+3. Install Node Modules of the angular project using "npm install"
+
+4. There is a db.json file in this folder, host that file using json-server with command "json-server --watch db.json"
+
+5. After that use in another Command Prompt use command "ng serve -o" to host the current angular project on port 4200 i.e. localhost:4200
+
+
+User Login Credentials 
+Email: dev@gmail.com
+Password: 12345
+
+Admin Login Credentials 
+Email: admin@admin.com
+Password: admin

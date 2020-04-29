@@ -47,14 +47,6 @@
       "price": 5,
       "category": "Food",
       "image": ""
-    },
-    {
-      "id": 353605,
-      "name": "Product #1",
-      "description": "This is a dummy Product ",
-      "price": 456,
-      "category": "Mobile",
-      "image": ""
     }
   ],
   "Users": [

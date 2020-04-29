@@ -6,24 +6,24 @@
                 <div class="row mt-1">
                     <div class="col-md-6 form-group">
                         <input type="text" class="form-control" placeholder="Product Name"
-                            [(ngModel)]="_service.currentProduct.name" required>
+                            [(ngModel)]="_service.currentProduct.name" >
                     </div>
                     <div class="col-md-6 form-group">
                         <input type="number" class="form-control" placeholder="Price"
-                            [(ngModel)]="_service.currentProduct.price" required>
+                            [(ngModel)]="_service.currentProduct.price" >
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12 form-group">
                         <textarea class="form-control" name="description" id="" cols="30" rows="10"
                             placeholder="Description" [(ngModel)]="_service.currentProduct.description"
-                            required></textarea>
+                            ></textarea>
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group col-12">
                         <select class="custom-select mr-sm-2" id="inlineFormCustomSelect"
-                            [(ngModel)]="_service.currentProduct.category" required>
+                            [(ngModel)]="_service.currentProduct.category" >
                             <option selected disabled>Select a Category</option>
                             <option class="options" value="Mobile">Mobile</option>
                             <option class="options" value="Laptop">Laptop</option>
